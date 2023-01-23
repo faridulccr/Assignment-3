@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Bootstrap demo</title>
+        <title>Justice</title>
         <!-- bootstrap cdn link -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -11,11 +11,159 @@
             integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
             crossorigin="anonymous"
         />
+        <!-- font awesome kits -->
+        <script
+            src="https://kit.fontawesome.com/f78c19fc0c.js"
+            crossorigin="anonymous"
+        ></script>
         <!-- css stylesheet -->
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css" />
     </head>
-    <body>
-        <h1>Hello, world!</h1>
+    <body class="container">
+        <header>
+            <!-- navbar starts -->
+            <nav class="navbar navbar-expand-lg my-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"
+                        ><img src="./images/logo2.png" alt=""
+                    /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#nav-menu"
+                        aria-controls="nav-menu"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- nav menu starts here -->
+                    <div
+                        class="collapse navbar-collapse text-end text-lg-center"
+                        id="nav-menu"
+                    >
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"
+                                    >Services<i
+                                        class="fa-solid fa-chevron-right ms-1"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">
+                                    Cases
+                                    <i
+                                        class="fa-solid fa-chevron-right ms-1"
+                                    ></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    >Blog
+                                    <i
+                                        class="fa-solid fa-chevron-right ms-1"
+                                    ></i
+                                ></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    >Contact Us
+                                    <i
+                                        class="fa-solid fa-chevron-right ms-1"
+                                    ></i
+                                ></a>
+                            </li>
+                        </ul>
+
+                        <!-- Button trigger modal -->
+                        <button
+                            type="button"
+                            class="py-2 px-4 primary-bg-color text-white border-0 rounded"
+                            data-bs-toggle="modal"
+                            data-bs-target="#consultation-modal"
+                        >
+                            Free Consultation
+                        </button>
+                        <!-- Modal -->
+                        <div
+                            class="modal fade"
+                            id="consultation-modal"
+                            tabindex="-1"
+                            aria-labelledby="modal-header"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1
+                                            class="modal-title fs-5"
+                                            id="modal-header"
+                                        >
+                                            Modal title
+                                        </h1>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">...</div>
+                                    <div class="modal-footer">
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary"
+                                            data-bs-dismiss="modal"
+                                        >
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- navbar ends -->
+        </header>
+        <main>
+            <!-- Banner section starts -->
+            <section class="banner-sec py-5 rounded mb-5 px-2 px-lg-0">
+                <div class="col-md-8 mx-auto py-5 text-white text-center">
+                    <h1 class="display-3 fw-bold">
+                        We Provide Effective Legal Solutions
+                    </h1>
+                    <p class="my-4">
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in
+                        some form, by injected humour.
+                    </p>
+                    <form class="d-flex" role="search">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search your services"
+                            aria-label="Search"
+                        />
+                        <button class="primary-bg-color text-white px-3 border-0 rounded" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer></footer>
 
         <!-- bootstrap js -->
         <script

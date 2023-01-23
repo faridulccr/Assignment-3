@@ -1,0 +1,14 @@
+.primary-bg-color {
+    background-color: #b68c5a;
+}
+.primary-text-color {
+    color: #b68c5a;
+}
+
+/* banner section styles */
+.banner-sec {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("./images/banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
