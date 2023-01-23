@@ -2,13 +2,48 @@
     background-color: #b68c5a;
 }
 .primary-text-color {
-    color: #b68c5a;
+    color: #414040;
 }
-
-/* banner section styles */
+.hide {
+    display: none;
+}
+/* banner section css styles */
 .banner-sec {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("./images/banner.png");
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/* practice section css styles */
+.practice-sec .row .col-md-6:hover {
+    transition: 0.2s;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.1),
+        rgb(255, 255, 255, 0.8)
+    );
+}
+@media only screen and (max-width: 991px) {
+    .practice-sec .row .col-md-6:nth-of-type(2n + 1) {
+        border: none !important;
+        border-right: 1px solid rgba(0, 0, 0, 0.2) !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+    }
+    .practice-sec .row .col-md-6:nth-of-type(2n) {
+        border: none !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+    }
+    .practice-sec .row .col-md-6:nth-of-type(5),
+    .practice-sec .row .col-md-6:nth-of-type(6) {
+        border-bottom: none !important;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .practice-sec .row .col-md-6:nth-of-type(2n + 1) {
+        border-right: none !important;
+    }
+    .practice-sec .row .col-md-6:nth-of-type(5) {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+    }
 }
