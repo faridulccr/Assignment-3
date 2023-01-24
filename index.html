@@ -19,10 +19,10 @@
         <!-- css stylesheet -->
         <link rel="stylesheet" href="./style.css" />
     </head>
-    <body class="container">
-        <header>
+    <body>
+        <header class="container">
             <!-- navbar starts -->
-            <nav class="navbar navbar-expand-lg my-3">
+            <nav class="navbar navbar-expand-lg my-3 hide">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"
                         ><img src="./images/logo2.png" alt=""
@@ -136,9 +136,9 @@
             </nav>
             <!-- navbar ends -->
         </header>
-        <main>
+        <main class="container">
             <!-- Banner section starts -->
-            <section class="banner-sec row py-5 rounded mb-5 px-2 px-lg-0">
+            <section class="banner-sec py-5 rounded mb-5 px-2 px-lg-0 hide">
                 <div class="col-md-8 mx-auto py-5 text-white text-center">
                     <h1 class="display-3 fw-bold">
                         We Provide Effective Legal Solutions
@@ -148,15 +148,15 @@
                         available, but the majority have suffered alteration in
                         some form, by injected humour.
                     </p>
-                    <form class="d-flex" role="search">
+                    <form class="d-flex flex-column flex-sm-row" role="search">
                         <input
-                            class="form-control me-2"
+                            class="form-control me-2 mb-3 mb-sm-0"
                             type="search"
                             placeholder="Search your services"
                             aria-label="Search"
                         />
                         <button
-                            class="primary-bg-color text-white px-3 border-0 rounded"
+                            class="primary-bg-color text-white py-2 px-3 border-0 rounded w-auto mx-auto"
                             type="submit"
                         >
                             Search
@@ -167,8 +167,10 @@
             <!-- Banner section ends -->
 
             <!-- Practice area starts -->
-            <section class="practice-sec py-5 text-center primary-text-color">
-                <h2 class="fw-bold fs-2">The Legal Practice Area</h2>
+            <section
+                class="practice-sec py-5 text-center primary-text-color hide"
+            >
+                <h2 class="fw-bold">The Legal Practice Area</h2>
                 <p class="mt-3 mb-5 col-md-7 mx-auto">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
@@ -252,9 +254,9 @@
             <!-- Practice area ends -->
 
             <!-- happy clients section start -->
-            <section class="row text-center mb-5">
-                <h1>What Our Client Say</h1>
-                <p class="col-md-8 mx-auto mb-5">
+            <section class="text-center my-5 hide">
+                <h2 class="fw-bold">What Our Client Say</h2>
+                <p class="col-md-8 mx-auto mt-3 mb-5">
                     There are many variations of passages of Lorem Ipsum
                     available, but the majority have suffered alteration in some
                     form, by injected humour.
@@ -339,7 +341,7 @@
                                         alt=""
                                     />
                                     <h2 class="fw-bold mt-3">Hridoy Shuvro</h2>
-                                    <h4> Graphics Designer</h4>
+                                    <h4>Graphics Designer</h4>
                                     <p
                                         class="col-10 col-md-9 mx-auto mt-4 mb-5"
                                     >
@@ -384,9 +386,204 @@
                 <!-- slider section ends-->
             </section>
             <!-- happy clients section ends -->
+
+            <!-- question section starts -->
+            <section class="py-5">
+                <h2 class="fw-bold text-center">
+                    Frequently Asked Any Questions
+                </h2>
+                <p class="col-md-9 mt-4 mb-5 text-center mx-auto">
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humour.
+                </p>
+
+                <!-- asked question section -->
+                <div class="d-flex flex-column-reverse flex-md-row">
+                    <div class="col-md-6">
+                        <div
+                            class="accordion accordion-flush"
+                            id="faq-accordion"
+                        >
+                            <div
+                                class="accordion-item border-0 accordion-bg-color rounded mb-4"
+                            >
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button
+                                        class="accordion-button collapsed accordion-bg-color text-dark mb-0 border-0 ps-3 pt-3 fw-bold fs-4 rounded"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                        aria-expanded="false"
+                                        aria-controls="collapseOne"
+                                    >
+                                        What is semantic tag?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseOne"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne"
+                                    data-bs-parent="#faq-accordion"
+                                >
+                                    <div class="accordion-body">
+                                        <strong>Semantic tags</strong>
+                                        also known as semantic elements, are
+                                        HTML tags that provide meaning to the
+                                        structure of a web page. They are used
+                                        to describe the type of content
+                                        contained within an element, rather than
+                                        just its visual layout.
+                                        <br />
+                                        Some examples of semantic tags include:
+                                        &lt;header&gt;,&lt;nav&gt;,&lt;main&gt;,&lt;article&gt;,&lt;aside&gt;,&lt;footer&gt;
+                                        etc
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-item border-0 accordion-bg-color rounded mb-4"
+                            >
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button collapsed accordion-bg-color text-dark mb-0 border-0 ps-3 pt-3 fw-bold fs-4 rounded"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo"
+                                    >
+                                        What is the purpose of media query?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwo"
+                                    data-bs-parent="#faq-accordion"
+                                >
+                                    <div class="accordion-body">
+                                        <strong>A media query</strong>
+                                        A media query is a CSS feature that
+                                        allows you to apply different styles to
+                                        a document based on the characteristics
+                                        of the device or screen displaying it.
+                                        It allows you to create responsive
+                                        designs that adapt to different screen
+                                        sizes and resolutions. The basic syntax
+                                        of a media query is to include a media
+                                        type, such as "screen" or "print", and
+                                        one or more expressions that check for
+                                        the presence or value of certain CSS
+                                        media features, such as the width or
+                                        height of the viewport.
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-item border-0 accordion-bg-color rounded mb-4"
+                            >
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button
+                                        class="accordion-button collapsed accordion-bg-color text-dark mb-0 border-0 ps-3 pt-3 fw-bold fs-4 rounded"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="collapseThree"
+                                    >
+                                        What is CSS box-model and How does it
+                                        work?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseThree"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree"
+                                    data-bs-parent="#faq-accordion"
+                                >
+                                    <div class="accordion-body">
+                                        <strong>The CSS box model</strong>
+                                        The CSS box model is a layout concept
+                                        that describes how elements are rendered
+                                        on a web page. It defines the dimensions
+                                        and spacing of an element and how it
+                                        interacts with other elements on the
+                                        page. <br />
+                                        <strong>The CSS box model</strong> works
+                                        by defining the layout and dimensions of
+                                        elements on a web page. It takes into
+                                        account the content, padding, border,
+                                        and margin of an element and uses these
+                                        properties to calculate the total width
+                                        and height of the element.
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="accordion-item border-0 accordion-bg-color rounded"
+                            >
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button
+                                        class="accordion-button collapsed accordion-bg-color text-dark mb-0 border-0 ps-3 pt-3 fw-bold fs-4 rounded"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour"
+                                        aria-expanded="false"
+                                        aria-controls="collapseFour"
+                                    >
+                                        What is the difference between flexbox
+                                        and grid layout?
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseFour"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingFour"
+                                    data-bs-parent="#faq-accordion"
+                                >
+                                    <div class="accordion-body">
+                                        <strong>Flexbox</strong>
+                                        is used for one-dimensional layouts,
+                                        where elements are laid out in a single
+                                        row or column. It is best used for
+                                        small-scale layouts, such as aligning
+                                        items within a container. Flexbox
+                                        provides properties for aligning items
+                                        along the main axis (horizontally or
+                                        vertically) and the cross axis, as well
+                                        as for controlling the size and position
+                                        of items. <br />
+                                        <strong>Grid</strong>, on the other
+                                        hand, is used for two-dimensional
+                                        layouts, where elements are laid out in
+                                        rows and columns. It is best used for
+                                        larger-scale layouts, such as entire
+                                        page layouts. Grid provides properties
+                                        for defining the number of rows and
+                                        columns, as well as for positioning
+                                        items within those rows and columns.
+                                        Grid also provides properties for
+                                        controlling the size and spacing of rows
+                                        and columns. In summary, Flexbox is best
+                                        for aligning items in one dimension
+                                        while Grid is best for creating a
+                                        two-dimensional layout of rows and
+                                        columns.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5 mb-md-0 ps-md-4">
+                        <img class="w-100" src="./images/faq.png" alt="" />
+                    </div>
+                </div>
+            </section>
+            <!-- question section ends -->
         </main>
 
-        <footer></footer>
+        <footer class="container"></footer>
 
         <!-- bootstrap js -->
         <script

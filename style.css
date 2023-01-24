@@ -45,6 +45,10 @@
     background-repeat: no-repeat;
 }
 
+/* faq section style */
+.accordion-bg-color {
+    background-color: #f3f3f3;
+}
 /*---------------------------------------
     Responsive design for medium devices
 -----------------------------------------*/
